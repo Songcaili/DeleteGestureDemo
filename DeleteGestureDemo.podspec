@@ -5,7 +5,7 @@ s.license      = "MIT"          # 开源证书
 s.summary      = "私人pod代码" # 项目简介
 
 s.homepage     = "https://github.com/Songcaili/DeleteGestureDemo.git" # 仓库的主页
-s.source       = { :git => "https://github.com/Songcaili/DeleteGestureDemo.git", :tag => "#{s.version}" }#你的仓库地址，不能用SSH地址
+s.source       = { :git => "git@github.com:Songcaili/DeleteGestureDemo.git", :tag => "#{s.version}" }#你的仓库地址，不能用SSH地址
 s.source_files = "DeleteGestureDemo/DeleteGestureDemo/*.{h,m}"
 s.requires_arc = true # 是否启用ARC
 s.platform     = :ios, "7.0" #平台及支持的最低版本
