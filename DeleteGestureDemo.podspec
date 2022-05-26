@@ -15,5 +15,12 @@ s.platform     = :ios, "7.0" #平台及支持的最低版本
 # User
 s.author             = { "songcaili" => "2496900710@qq.com" } # 作者信息
 
+s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+s.pod_target_xcconfig = {
+    'LLVM_LTO[config=Debug][sdk=*][arch=*]' => 'YES_THIN',
+    'LLVM_LTO[config=Release][sdk=*][arch=*]' => 'YES_THIN',
+}
+
 end
 
